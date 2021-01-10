@@ -42,7 +42,7 @@ $('[data-toggle="counter-up"]').counterUp({
 
         if ($('body').hasClass('mobile-nav-active')) {
           $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          $('.mobile-nav-toggle i').toggleClass('fas fa-bars fas fa-times');
           $('.mobile-nav-overly').fadeOut();
         }
         return false;
@@ -69,12 +69,12 @@ $('[data-toggle="counter-up"]').counterUp({
       class: 'mobile-nav d-lg-none'
     });
     $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="fas fa-bars"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
     $(document).on('click', '.mobile-nav-toggle', function(e) {
       $('body').toggleClass('mobile-nav-active');
-      $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+      $('.mobile-nav-toggle i').toggleClass('fas fa-bars fas fa-times');
       $('.mobile-nav-overly').toggle();
     });
 
@@ -89,7 +89,7 @@ $('[data-toggle="counter-up"]').counterUp({
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($('body').hasClass('mobile-nav-active')) {
           $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          $('.mobile-nav-toggle i').toggleClass('fas fa-bars fas fa-times');
           $('.mobile-nav-overly').fadeOut();
         }
       }
