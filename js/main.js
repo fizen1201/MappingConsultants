@@ -5,7 +5,7 @@
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
-      $('#preloader').delay(200).fadeOut('slow', function() {
+      $('#preloader').delay(300).fadeOut('slow', function() {
         $(this).remove();
       });
     }
@@ -14,7 +14,7 @@
 // Counter.js
 $('[data-toggle="counter-up"]').counterUp({
   delay: 10,
-  time: 5000
+  time: 3000
 });
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
@@ -150,6 +150,25 @@ $('[data-toggle="counter-up"]').counterUp({
     return false;
   });
 
+
+  //team-carousel
+  $(".team-carousel").owlCarousel({
+    loop:true,
+    margin: 50,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+  });
+
   // Clients carousel
   $(".clients-carousel").owlCarousel({
     nav:false,
@@ -202,7 +221,7 @@ $('[data-toggle="counter-up"]').counterUp({
   // Testimonials carousel 
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
-    dots: true,
+    dots: false,
     loop: true,
     lazyLoad: true,
     items: 1

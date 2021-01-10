@@ -5,7 +5,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
+.card{
+  width:80%;
+}
 a {
   color: #16c79a;
   text-decoration: none;
@@ -549,7 +551,7 @@ h6 {
   }
   .Initial{
     color: teal !important;
-    font-size:3.3rem !important;
+    font-size:3.5rem !important;
   }
   .updraft{
     margin-top: 50px;
@@ -735,6 +737,8 @@ section {
   text-align: center;
   border: 1px solid #ebebeb;
   padding: 80px 20px;
+  width:80%;
+  margin: 0 auto;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
