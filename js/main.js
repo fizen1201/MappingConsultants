@@ -3,13 +3,13 @@
   "use strict";
 
   // Preloader
-  $(window).on('load', function() {
-    if ($('#preloader').length) {
-      $('#preloader').delay(300).fadeOut('slow', function() {
-        $(this).remove();
-      });
-    }
-  });
+//   $(window).on('load', function() {
+//     if ($('#preloader').length) {
+//       $('#preloader').delay(300).fadeOut('slow', function() {
+//         $(this).remove();
+//       });
+//     }
+//   });
 
 // Counter.js
 $('[data-toggle="counter-up"]').counterUp({
