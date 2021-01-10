@@ -7,6 +7,7 @@ body {
 }
 .card{
   width:80%;
+  margin: 0 auto;
 }
 a {
   color: #16c79a;
@@ -158,6 +159,7 @@ h6 {
   }
 
   .content {
+    margin: 0 10px !important;
     padding: none !important;
   }
 

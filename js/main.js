@@ -14,7 +14,7 @@
 // Counter.js
 $('[data-toggle="counter-up"]').counterUp({
   delay: 10,
-  time: 3000
+  time: 4000
 });
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
