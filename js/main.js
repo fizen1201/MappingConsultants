@@ -223,7 +223,6 @@ $('[data-toggle="counter-up"]').counterUp({
     autoplay: true,
     dots: false,
     loop: true,
-    lazyLoad: true,
     items: 1
   });
 
@@ -232,7 +231,6 @@ $('[data-toggle="counter-up"]').counterUp({
     autoplay: true,
     dots: true,
     loop: true,
-    lazyLoad: true,
     items: 1
   });
 
