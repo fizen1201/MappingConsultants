@@ -2,10 +2,10 @@
 !(function($) {
   "use strict";
 
-  Preloader
+  // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
-      $('#preloader').delay(400).fadeOut('slow', function() {
+      $('#preloader').delay(300).fadeOut('slow', function() {
         $(this).remove();
       });
     }
