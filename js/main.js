@@ -16,6 +16,9 @@ $('[data-toggle="counter-up"]').counterUp({
   delay: 10,
   time: 4000
 });
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 2;
@@ -150,7 +153,14 @@ $('[data-toggle="counter-up"]').counterUp({
     return false;
   });
 
-
+// Back to Home button
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 800) {
+    $('.back-to-home').fadeIn('slow');
+  } else {
+    $('.back-to-home').fadeOut('slow');
+  }
+});
   //team-carousel
   $(".team-carousel").owlCarousel({
     loop:true,
@@ -168,6 +178,24 @@ $('[data-toggle="counter-up"]').counterUp({
         }
     }
   });
+//Service-carousel
+$(".service-owl").owlCarousel({
+  nav:false,
+    autoplaySpeed: 1600,
+    autoplayHoverPause: true,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      900: {
+        items: 3
+      }
+    }
+});
 
   // Clients carousel
   $(".clients-carousel").owlCarousel({
@@ -191,7 +219,24 @@ $('[data-toggle="counter-up"]').counterUp({
       }
     }
   });
-
+// Port Owl
+$(".port-owl").owlCarousel({
+  nav:false,
+  margin: 50,
+  autoplayHoverPause: true,
+  autoplay: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    900: {
+      items: 3
+    }
+  }
+});
   // Projects
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -215,9 +260,6 @@ $('[data-toggle="counter-up"]').counterUp({
       });
     });
   });
-
-  
-
   // Testimonials carousel 
   $(".testimonials-carousel").owlCarousel({
     autoplay: true,
@@ -225,7 +267,13 @@ $('[data-toggle="counter-up"]').counterUp({
     loop: true,
     items: 1
   });
-
+ // Testimonials carousel 
+ $(".testimonials-carousel").owlCarousel({
+  autoplay: true,
+  dots: false,
+  loop: true,
+  items: 1
+});
   // Project details carousel
   $(".portfolio-details-carousel").owlCarousel({
     autoplay: true,
