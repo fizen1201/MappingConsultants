@@ -5,33 +5,62 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Mapping Consultants</title>
-<!-- Awesome -->
-<script src="js/fontawesome.js" crossorigin="anonymous"></script>
- <!-- Vendor CSS Files -->
- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
- <link href="vendor/venobox/venobox.min.css" rel="stylesheet">
- <link href="vendor/aos/aos.css" rel="stylesheet">
- <!-- Template Main CSS File -->
- <link href="css/style.css" rel="stylesheet">
+  <!-- Awesome -->
+  <script src="js/fontawesome.js" crossorigin="anonymous"></script>
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="vendor/venobox/venobox.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/unite/unite.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.html"><span class="Initial">M</span>apping <span class="Initial">C</span>onsultants</a></h1>
-      <nav class="nav-menu">
-        <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <h1 id="logo"><span class="Initial">M</span>apping <span class="Initial">C</span>onsultants</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#header">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Our Team</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Project
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#portfolio">Project Section</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Project Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+      </div>
     </div>
-  </header><!-- End Header -->
+  </nav>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
@@ -48,25 +77,25 @@
         <div class="col-xl-2 col-md-4 col-6">
           <div class="icon-box">
             <i class="far fa-building"></i>
-            <h2><a href="">Architectural</a></h2>
+            <h2 class="iconheader"><a>Architectural</a></h2>
           </div>
         </div>
         <div class="col-xl-2 col-md-4 col-6 ">
           <div class="icon-box">
             <i class="fas fa-paint-roller"></i>
-            <h2><a href="">Interiors</a></h2>
+            <h2 class="iconheader"><a>Interiors</a></h2>
           </div>
         </div>
         <div class="col-xl-2 col-md-4 col-6 mt-4 mt-md-0">
           <div class="icon-box">
             <i class="fas fa-ruler-combined"></i>
-                        <h2><a href="">Structural Detailing</a></h2>
+            <h2 class="iconheader"><a>Structural Detailing</a></h2>
           </div>
         </div>
         <div class="col-xl-2 col-md-4 col-6 mt-4 mt-xl-0">
           <div class="icon-box">
             <i class="fas fa-couch"></i>
-                        <h2><a href="">Furniture Designs</a></h2>
+            <h2 class="iconheader"><a>Furniture Designs</a></h2>
           </div>
         </div>
       </div>
@@ -81,29 +110,34 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row">
-          <h1 style="font-size: 5rem;text-align: center;margin-bottom: 20px;"><strong>About Us</strong></h1><br>
-
+          <div class="section-title">
+            <h2>About Us</h2>
+            <p>Know about us More</p>
+          </div>
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
 
             <img src="img/about.jpg" class="img-fluid" alt="" style="margin-top: 12px;">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
             <p class="font-italic">
-              We
-              offers Consultancy services in the field of Architectural, Interiors,
-              Structural Detailing, external developments and its allied services
-              (MEP). It excels in the field of Architecture, Interior and
-              Furniture designs of Corporate Offices, Banks, Commercial,
-              Religious, Industrial & Institutional Building & Large residential
-              Township Projects.
-
-              We also design projects for Green Building concepts (SAV GRIHA
-              & BEE norms).
-
-              The Chief Architect of the firm is Registered with Council of
-              Architects, New Delhi & Indian Institute of Architects. We have a
-              numbers of other qualified & experienced staff in the field of
-              Architecture & Interior Designing & PMC Projects.
+              Mapping consultants is a Delhi based Architecture and Interior design firm, established in
+              <em>2002</em>. We are supported by young as well as experienced, dedicated and committed team
+              of Architects, Interior designer and consultants who are akin to a quick and yet a quality
+              Work.
+              Mapping consultants have wide expertise in the Educational, Industrial, Health,
+              Corporate office and Residential Space designing. Our capability, therefor, is not just
+              defined by credible conceptualization and designing with providing a positive
+              environment to aid execution of work well in time. The testimony to our firm is the
+              repeat business from our existing client and a positive word of mouth from them for our
+              new business acquisition.
+              Mapping Consultants designs are creative, functional, futuristic, invariable environmental
+              and budget friendly with feel good factor. We also don’t believe in a one size fits. We
+              undertake every type of Architecture &amp; interior projects and each solution is custom
+              designed to suits. Every design from the smallest balustrade detail to entire project are
+              uniquely treated and designed to precisely serve their individual purpose with the latest
+              technology and equipment. This environment, not only enables our workable and
+              technically designed drawing but also has been aiding us successfully in completing any
+              complex project thus far.
             </p>
             <ul>
               <li><i class="fas fa-check-double"></i>We also design projects for Green Building concepts (SAV GRIHA
@@ -127,24 +161,51 @@
           </div>
         </div>
 
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
-        <div class="owl-carousel clients-carousel">
-          <img src="img/clients/client-1.png" alt="">
-          <img src="img/clients/client-2.png" alt="">
-          <img src="img/clients/client-3.png" alt="">
-          <img src="img/clients/client-4.png" alt="">
-          <img src="img/clients/client-5.png" alt="">
-          <img src="img/clients/client-6.png" alt="">
-          <img src="img/clients/client-7.png" alt="">
-          <img src="img/clients/client-8.png" alt="">
+        <!-- 2nd row -->
+        <div class="row">
+          <div class="section-title" style="margin-top: 20px !important; padding-bottom: 20px !important;">
+            <h2>OUR VISION</h2>
+          </div>
+          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <p class="font-italic">
+              With passion and a bright vision in mind, a young heart had thought of
+              E A A as a dream and have worked hard on it for more than 20 years with sheer dedication
+              to make it a reality and we all can see the evidence through the team’s efforts.
+              E A A is a team of creative designers working globally with creative teams under one roof. 
+              Our team enthusiastically looks forward to cater large &amp; medium scale projects.
+              With curiosity and energy E A A takes every project as a new challenge and gives the best
+              shot to which you can see their success as evidence.
+              E A A, today has grown in such a fashion and in terms of scale that it can very well cater to
+              large scale , mass housing , low cost housing projects with utter most creative, innovative
+              and unique ideas for masterpiece execution as well!
+            </p>
+          </div>
+        </div>
+        <!-- 3rd ROW -->
+        <div class="row">
+          <div class="section-title" style="margin-top: 50px !important; padding-bottom: 20px !important;">
+            <h2>OUR DESIGN IDEOLOGY</h2>
+          </div>
+          <div class="col-lg-12 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <p class="font-italic">
+              Our designs are futuristic and in league with the changing times. Creating lively ambiances,
+              which do not make the inhabitants feel, after that they are trapped in an Era bygone. Even as
+              we believe in architecture being the highest manifestation of art, it is an art to be experienced
+              as well as enjoyed. Buildings are the indelible signatures of a society, technology and time
+              that herald the ages to come, and are expected to maintain their grandeur after witnessing
+              many decades.
+              “We believe designing and execution is a team work. We are very selective while choosing a
+              professional for our team. E A A team is eager and curious for every new project and genre
+              and look forward to large scale townships and low cost housing. Our each team itself works
+              out like an office, where each member of the team is equally responsible and important for
+              every kind of a project, which also welcomes new talent and everyone’s opinion is respected.
+              Our team get involved in major brainstorming, right from evolving the concept and designing
+              a desired form.”
+            </p>
+          </div>
         </div>
       </div>
-    </section>End Clients Section -->
+    </section><!-- End About Section -->
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
@@ -187,35 +248,43 @@
         <div class="section-title">
           <h2>Services</h2>
           <p>The Services We Provide</p>
-        </div>
+        </div><br>
         <div class="row">
           <div class="owl-carousel owl-theme service-owl">
             <div class="item d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box">
                 <div class="icon"><i class="fas fa-ruler-combined"></i></div>
-                <h4><a href="">Interior Design & Furniture Design</a></h4>
+                <h4><a href="">ARCHITECTURE</a></h4>
+                <p>Our architecture is driven by a belief that the quality of our surroundings has a direct
+                  influence on the quality of our lives, whether at home, in the workplace, the cultural building
+                  or the public realm. The same thinking applies at the larger scale of infrastructure, whether
+                  that is a commercial building, Residential building, Affordable Housing or anything else.</p>
               </div>
             </div>
 
-            <div class=" d-flex align-items-stretch mt-4 mt-md-0 item" data-aos="zoom-in"
-            data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="fas fa-building"></i></div>
-              <h4><a href="">Green Building concepts (SAV GRIHA
-                & BEE norms).</a></h4>
+            <div class=" d-flex align-items-stretch mt-4 mt-md-0 item" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><i class="fas fa-building"></i></div>
+                <h4><a href="">INTERIOR DESIGN</a></h4>
+                <p>We believe that architecture should provide a seamless experience, from outside to inside.
+                  The starting point is to gain an understanding of a client’s needs and the way in which a
+                  room, or sequence of spaces will be used. We have created interiors that span the spectrum
+                  from private houses to office towers.
+                  The quality of light, the choice of materials, the use of colour, and the selection of furnishings
+                  and works of art are coordinated as part of the overall scheme; and each element involves
+                  the same process of questioning and refinement as the building itself.</p>
+              </div>
+            </div>
+
+            <div class="item  d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><i class="fas fa-drafting-compass"></i></div>
+                <h4><a href="">Preparing Drawing
+                    & Tender, Bills of Quantities</a></h4>
+              </div>
             </div>
           </div>
-          
-          <div class="item  d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-          data-aos-delay="300">
-          <div class="icon-box">
-            <div class="icon"><i class="fas fa-drafting-compass"></i></div>
-            <h4><a href="">Preparing Drawing
-              & Tender, Bills of Quantities</a></h4>
-          </div>
         </div>
-        </div>
-      </div>
       </div>
     </section><!-- End Services Section -->
 
@@ -234,24 +303,24 @@
     <!-- End Get In Touch Section -->
 
     <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container" data-aos="fade-up">
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
 
-      <div class="section-title">
-        <h2>PROJECTS</h2>
-        <p>Project Gallery</p>
-      </div>
-      <div class="container" style="text-align: center;">
-        <div class="d-grid gap-2">
-          <a href="gallery.html"><button class="btn btn-lg btn-outline-dark gallerybtn" type="button">Click the Button to View Project Gallery  <i class="fas fa-images"></i></button></a>
+        <div class="section-title" id="gallery">
+          <h2>PROJECTS</h2>
+          <p>Project Gallery</p>
         </div>
-        <!-- <a href="gallery.html"><button class="btn btn-lg btn-outline-dark gallerybtn">Gallery</button></a> -->
+        <div class="container" style="text-align: center;">
+          <div class="d-grid gap-2">
+            <a href="gallery.html"><button class="bttn-unite bttn-md bttn-success gallerybtn" type="button">Click the
+                Button to View Project Gallery <i class="fas fa-images"></i></button></a>
+          </div>
+        </div>
       </div>
-</div>
-</section>
-  
+    </section>
+
     <!-- End Portfolio Section -->
-<hr>
+    <hr>
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts">
       <div class="container" data-aos="fade-up">
@@ -264,22 +333,28 @@
             <div class="content d-flex flex-column justify-content-center" style="padding-left: 50px">
               <h3>A happy Client is like achieving Nirvana</h3>
               <p>
-                We have a history of Happy Clients, years of experience and esteemed staff who are dedicated towards their work. 
+                Learning from the past and applying it to the future. It means keeping up with the times and
+                moving ahead. It means constantly re-inventing and exploring our potential. It means
+                constantly expanding our limits and challenging our horizons of knowledge. It means a
+                conscious growth through creative evolution. It means respecting and attending to our every
+                client, every site , every requirement as unique. At E A A, we know what it takes to succeed
+                and we do not compromise on quality, for we believe that: “Every job is the self – portrait of
+                the firm that does it. We let our work speak for us.
               </p>
               <div class="row">
-                <div class="col-md-6 col-sm-6 " >
+                <div class="col-md-6 col-sm-6 ">
                   <div class="count-box">
                     <i class="fas fa-smile"></i>
-                     <span data-toggle="counter-up">100</span>
+                    <span data-toggle="counter-up">100</span>
                     <p><strong>Happy Clients</strong> </p>
                   </div>
                 </div>
 
                 <div class="col-md-6 col-sm-6 ">
                   <div class="count-box">
-                    <i class="fas fa-project-diagram"></i>                   
-                     <span data-toggle="counter-up">100</span>
-                    <p><strong>Projects</strong> 
+                    <i class="fas fa-project-diagram"></i>
+                    <span data-toggle="counter-up">100</span>
+                    <p><strong>Projects</strong>
                     </p>
                   </div>
                 </div>
@@ -287,9 +362,9 @@
                 <div class="col-md-6 col-sm-6 ">
                   <div class="count-box">
                     <i class="fas fa-business-time"></i>
-                    <span data-toggle="counter-up">10</span>
+                    <span data-toggle="counter-up">19</span>
                     <p><strong>Years of experience</strong>
-                      </p>
+                    </p>
                   </div>
                 </div>
 
@@ -318,7 +393,7 @@
             <h4>POST &amp;</h4>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-            Content
+              Content
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
@@ -336,31 +411,52 @@
         </div>
         <div class="row">
           <div class="owl-carousel team-carousel">
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/50" alt="Card image cap">
+            <div class="card border-dark">
+              <img class="card-img-top" src="img/woman.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">First</h5>
-                <p class="card-text">Content</p>
+                <h5 class="card-title"><strong>Namrata Varshney</strong></h5>
+                <br>
+                <footer class="blockquote-footer" style="text-align: right;">(Principal Architect)</footer>
+                <p class="card-text">Namrata Varshney completed her degree in Architecture from Indian Institute of
+                  Architect, Mumbai and established Mapping consultants an Architecture &amp; Interior
+                  Design firm in 2002.<br>
+                  She is passionate to lead every project as an entrepreneur led her to become one after
+                  working for 8 years (out of total 25 year experience) as an architect in renowned firms.
+                  Her strong design conceptualization, constant re-invention and team handling capabilities
+                  sets the vision of the firm.</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">Social LINKSSSSSSSSS</small>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/50" alt="Card image cap">
+            <div class="card border-dark">
+              <img class="card-img-top" src="img/woman.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Second</h5>
-                <p class="card-text">Content</p>
+                <h5 class="card-title"><strong>Mamta Mehtani</strong></h5>
+                <br>
+                <footer class="blockquote-footer" style="text-align: right;">(Associate Architect)</footer>
+                <p class="card-text">Mamta Mehtani completed her degree in Architecture from Indian Institute of
+                  Architect,
+                  Mumbai and associated Mapping Consultants in 2014.<br> She has more than 20 year
+                  experience in the field of Architecture and Interior designs.
+                  She guides and co-ordinate with the team &amp; consultants, client and execution agencies to
+                  excel the project and complete in scheduled time frame.</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">Social LINKSSSSSSSSS</small>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://via.placeholder.com/50" alt="Card image cap">
+            <div class="card border-dark">
+              <img class="card-img-top" src="img/woman.jpg" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Third</h5>
-                <p class="card-text"> Content</p>
+                <h5 class="card-title"><strong>Vinita Varshney</strong></h5>
+                <br>
+                <footer class="blockquote-footer" style="text-align: right;">(Co-ordination &amp; Administration)
+                </footer>
+                <p class="card-text"> Vinita Varshney completed her post-graduation in Psychology from Agra University
+                  (UP).<br> Also being an administrative head, she looks after administration and co-ordination
+                  of the organization and ensure the implementation of laid down policies. She has more
+                  than 15 years of work experience.</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">Social LINKSSSSSSSSS</small>
@@ -370,7 +466,29 @@
         </div>
       </div>
     </section><!-- End Team Section -->
-
+    <!-- ======= Clients Section ======= -->
+    <div class="section-title container">
+      <h2>Clients</h2>
+      <p>Our Clients</p>
+    </div>
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+        <div class="owl-carousel clients-carousel">
+          <img src="img/clients/ajnara.png" alt="">
+          <img src="img/clients/alien.png" alt="">
+          <img src="img/clients/elcomponics.png" alt="">
+          <img src="img/clients/ent.png" alt="">
+          <img src="img/clients/garg.png" alt="">
+          <img src="img/clients/idbi.png" alt="">
+          <img src="img/clients/js.png" alt="">
+          <img src="img/clients/pnb.png" alt="">
+          <img src="img/clients/prateek.png" alt="">
+          <img src="img/clients/skytech.png" alt="">
+          <img src="img/clients/tdb.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!--End Clients Section -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -379,7 +497,9 @@
           <p>Contact Us</p>
         </div>
         <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.9690360817353!2d77.31081411492401!3d28.660645782406785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbc6c9ec2d2f%3A0x9c40021c1ba0548b!2sVardhman%20AC%20market!5e0!3m2!1sen!2sin!4v1610135109468!5m2!1sen!2sin" width="600" height="450" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.9690360817353!2d77.31081411492401!3d28.660645782406785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfbc6c9ec2d2f%3A0x9c40021c1ba0548b!2sVardhman%20AC%20market!5e0!3m2!1sen!2sin!4v1610135109468!5m2!1sen!2sin"
+            width="600" height="450" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
         </div>
         <div class="row mt-5">
           <div class="col-lg-4">
@@ -391,7 +511,7 @@
               </div>
 
               <div class="email">
-               <a href="mailto:mapping.c@yahoo.com"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:mapping.c@yahoo.com"><i class="fas fa-envelope"></i></a>
                 <h4>Email:</h4>
                 <p>mapping.c@yahoo.com</p>
               </div>
@@ -410,17 +530,18 @@
             <form name="contact" method="POST" data-netlify="true">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"/>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" />
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"/>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" />
                 </div>
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" data-rule="required"
                   placeholder="Enter the Message"></textarea>
               </div><br>
-              <div class="text-center"><button id="submit" class="btn btn-lg btn-outline-light" type="submit">Send Message</button></div>
+              <div class="text-center"><button id="submit" class="btn btn-lg btn-outline-light" type="submit">Send
+                  Message</button></div>
             </form>
           </div>
         </div>
@@ -437,9 +558,9 @@
             <div class="footer-info">
               <h3>Mapping Consultants</h3>
               <p>105, 1st FLOOR, VARDHAMAN AC MARKET,
-CSC, VIGYAN VIHAR, DELHI – 110092<br>
+                CSC, VIGYAN VIHAR, DELHI – 110092<br>
                 <strong>Telephone:</strong>011-41576479<br>
-                <strong>Email:</strong>   mapping.c@yahoo.com<br>
+                <strong>Email:</strong> mapping.c@yahoo.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
@@ -447,9 +568,11 @@ CSC, VIGYAN VIHAR, DELHI – 110092<br>
                 <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="fab fa-skype"></i></a>
                 <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=9999092081&amp;text=Hello" class="applyinfo-btn"
+                  target="_blank"><i class="fab fa-whatsapp"></i> </a>
               </div>
             </div>
-          </div> 
+          </div>
 
         </div>
       </div>
@@ -457,7 +580,7 @@ CSC, VIGYAN VIHAR, DELHI – 110092<br>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright . All Rights Reserved
+        &copy; Copyright 2020. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -465,19 +588,19 @@ CSC, VIGYAN VIHAR, DELHI – 110092<br>
   <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
   <div id="preloader"></div>
 
-   <!-- Vendor JS Files -->
-   <script src="vendor/jquery/jquery.min.js"></script>
-   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-   <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-   <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-   <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
-   <script src="vendor/venobox/venobox.min.js"></script>
-   <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
-   <script src="vendor/counterup/counterup.min.js"></script>
-   <script src="vendor/aos/aos.js"></script>
- 
-   <!-- Template Main JS File -->
-   <script src="js/main.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/venobox/venobox.min.js"></script>
+  <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="vendor/counterup/counterup.min.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
 
 </body>
 

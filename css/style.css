@@ -5,10 +5,21 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+html {
+  scroll-behavior: smooth !important;
+}
 .card{
   width:80%;
   margin: 0 auto;
-  border: 1px solid grey ;
+}
+.card-text{
+  max-height: 200px;
+  overflow: scroll;
+}
+.card-title{
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 a {
   color: #16c79a;
@@ -203,12 +214,18 @@ h6 {
   z-index: 999;
   padding: 15px 0;
 }
-
+.nav-item{
+  font-size: 1.2rem;
+  margin: 2px 20px; 
+  }
 #header.header-scrolled,
 #header.header-inner-pages {
   background: rgba(0, 0, 0, 1);
 }
-
+#logo{
+  font-size: 2.6rem;
+}
+/* 
 #header .logo {
   font-size: 32px;
   margin: 0;
@@ -217,8 +234,8 @@ h6 {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-}
-
+} */
+/* 
 #header .logo a {
   color: #fff;
 }
@@ -229,7 +246,7 @@ h6 {
 
 #header .logo img {
   max-height: 40px;
-}
+} */
 .Initial{
   color: teal !important;
   font-size:4rem
@@ -259,7 +276,7 @@ h6 {
   position: relative;
   color: #fff;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 22px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
 }
@@ -375,7 +392,7 @@ h6 {
 }
 
 /* Mobile Navigation */
-.mobile-nav-toggle {
+/* .mobile-nav-toggle {
   position: fixed;
   top: 20px;
   right: 15px;
@@ -480,7 +497,7 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -531,8 +548,8 @@ h6 {
 #hero .icon-box {
   padding: 30px 20px;
   transition: ease-in-out 0.3s;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 30%;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3%;
   height: 100%;
   text-align: center;
 }
@@ -557,27 +574,60 @@ h6 {
   transition: ease-in-out 0.3s;
 }
 
-#hero .icon-box h2 a:hover {
-  color: #16c79a;
-}
-
 #hero .icon-box:hover {
   border-color: #fdb827;
 }
+/* MEDIA QUERY */
+@media screen and (max-width: 1024px) and (min-width: 768px){
+  #hero .icon-box h2{
+    font-size: 1.9rem !important;
+  }
+  #hero .icon-box {
+    border-radius: 20% !important;
+  }
+}
+@media screen and (max-width: 320px){
+  #hero .icon-box h2{
+    font-size: 1rem !important;
+  }
+  #logo{
+    font-size: 1.6rem !important;
+  }
+}
+@media screen and (min-width: 372px) and (max-width: 424px){
+  #logo{
+    font-size: 2rem !important;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px){
+  #logo{
+    font-size: 1.5rem !important;
+  }
+}
 
+@media screen and (max-width: 768px) and (min-width: 425px){
+  #logo{
+    font-size: 2.5rem !important;
+  }
+}
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
 }
-
 @media (max-width: 768px) {
   #hero {
     height: auto;
   }
+  .iconheader{
+    font-size: 1.3rem !important;
+  }
   section {
     padding: 20px 0 !important;
     overflow: hidden;
+  }
+  #portfolio{
+    margin-top: 50px;
   }
   .Initial{
     color: teal !important;
@@ -692,16 +742,15 @@ section {
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-}
+} 
 
-.clients .owl-item img {
-  width: 70%;
-  opacity: 0.7;
+ .clients .owl-item img {
+  width: 95%;
+   opacity: 0.9;
   transition: 0.3s;
-  /* filter: grayscale(100); */
-}
+ }
 
-.clients .owl-item img:hover {
+ .clients .owl-item img:hover {
   filter: none;
   opacity: 1;
 }
@@ -769,6 +818,8 @@ section {
   border: 1px solid #cfcfcf;
   padding: 40px 20px;
   width:80%;
+  max-height: 440px;
+  overflow: scroll;
   margin: 0 auto;
   transition: all ease-in-out 0.3s;
   background: rgb(241, 238, 238);
@@ -813,12 +864,12 @@ section {
   font-size: 14px;
   margin-bottom: 0;
 }
-
-.services .icon-box:hover {
-  border-color: #16c79a;
-  box-shadow: 5px 5px 16px -4px rgba(0,0,0,0.75);
-  transform: translateY(-10px);
+a{
+  text-decoration: none !important;
 }
+.services .icon-box:hover {
+  border: 3px solid #16c79a;
+  box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.75);}
 
 /*--------------------------------------------------------------
 # Cta
