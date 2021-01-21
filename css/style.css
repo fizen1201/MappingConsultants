@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth !important;
 }
 .card{
-  width:80%;
+  width:92%;
   margin: 0 auto;
 }
 .card-text{
@@ -38,7 +38,8 @@ a:hover {
   text-decoration: none;
 }
 #brandname{
-font-size: 5rem !important;
+font-size: 6.5rem !important;
+text-shadow: 4px 1px 6px rgba(1, 150, 150, 1);
 }
 
 h1,
@@ -213,6 +214,8 @@ h6 {
 }
 #logo{
   font-size: 2.6rem;
+  color: #16c79a !important;
+
 }
 .Initial{
   color: teal !important;
@@ -266,7 +269,7 @@ h6 {
 }
 
 #start .icon-box {
-  padding: 30px 20px;
+  padding: 20px;
   transition: ease-in-out 0.3s;
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 3%;
@@ -311,8 +314,8 @@ section {
 }
 
 .section-title h2 {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   padding: 0;
   line-height: 1px;
   margin: 0 0 5px 0;
@@ -321,6 +324,9 @@ section {
   color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
+.aboutleft{
+  font-size:1rem !important;
+}
 
 .section-title h2::after {
   content: "";
@@ -328,7 +334,7 @@ section {
   height: 1px;
   display: inline-block;
   background: #16c79a;
-  margin: 4px 10px;
+  margin: 10px 11px;
 }
 
 .section-title p {
@@ -692,9 +698,9 @@ a{
 .counts .content {
   padding: 30px 0;
 }
-.counterrow{
-  margin: 20px auto !important;
-  text-align: center !important; 
+.count-box{
+  margin: 8px 0px !important;
+  text-align: left !important; 
 }
 .counts .content h3 {
   font-weight: 700;
@@ -976,7 +982,7 @@ a{
 }
 
 .contact .info p {
-  padding: 0 0 0 60px;
+  padding: 0 0 0 20px;
   margin-bottom: 0;
   font-size: 14px;
   color: #484848;
@@ -1069,6 +1075,15 @@ a{
   }
 }
 
+#map{
+  box-shadow: 2px 3px 6px  #16c79a;
+  border-radius:18px;
+}
+#map:hover{
+  box-shadow: none;
+ transition-delay: 0.1s;
+ transition-duration: 1s;
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1311,7 +1326,9 @@ a{
   color: #fff;
 }
 
-
+.contact .info p{
+  margin-left: 40px !important;
+ }
 
 
 /* --------------------------------- MEDIA QUERY --------------------------------- */
@@ -1322,15 +1339,17 @@ a{
     font-size: 1rem !important;
   }
   p{
-    width:90% !important;
+    width:95% !important;
     margin:0 auto !important;
  }
+ 
   #logo{
     font-size: 1.5rem !important;
   }
   .navbar-toggler{
     margin: 0 auto !important;
   }
+  
 }
 /* For Smaller screens(s) */
 @media screen and (min-width: 320px) and (max-width: 375px){

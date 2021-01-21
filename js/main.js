@@ -79,6 +79,28 @@ $(window).scroll(function() {
     $('.back-to-home').fadeOut('slow');
   }
 });
+
+//Vision carousel
+  $(".vision-carousel").owlCarousel({
+    loop:true,
+    autoplaySpeed: 1000,
+    autoplayHoverPause: true,
+    autoplay: true,
+    margin: 50,
+    dots: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2,
+            loop:false
+        }
+    }
+  });
   //team-carousel
   $(".team-carousel").owlCarousel({
     loop:false,
@@ -186,13 +208,6 @@ $(".port-owl").owlCarousel({
     loop: true,
     items: 1
   });
- // Testimonials carousel 
- $(".testimonials-carousel").owlCarousel({
-  autoplay: true,
-  dots: false,
-  loop: true,
-  items: 1
-});
   // Project details carousel
   $(".portfolio-details-carousel").owlCarousel({
     autoplay: true,
