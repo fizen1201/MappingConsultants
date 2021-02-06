@@ -1,7 +1,7 @@
 
 !(function($) {
   "use strict";
-// Security
+  // Security
 
   document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
@@ -121,18 +121,21 @@ $(window).scroll(function() {
 //Service-carousel
 $(".service-owl").owlCarousel({
   nav:false,
-    autoplaySpeed: 1600,
-    autoplayHoverPause: true,
+  loop:true,
+  dots:false,
+  slideTransition: 'linear',
+    autoplayTimeout: 1500,
+    autoplaySpeed: 2700,
     autoplay: true,
     responsive: {
       0: {
         items: 1
       },
       768: {
-        items: 2
+        items: 3
       },
       900: {
-        items: 3
+        items: 4
       }
     }
 });

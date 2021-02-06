@@ -4,7 +4,6 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
 html {
   scroll-behavior: smooth !important;
 }
@@ -12,9 +11,13 @@ html {
   width:92%;
   margin: 0 auto;
 }
+/* CARD */
+
 .card-text{
-  max-height: 200px;
+  min-height: 250px;
+  max-height: 270px;
   overflow: scroll;
+  font-size: 1em;
 }
 .card-title{
   font-family: 'Fraunces', serif;
@@ -463,13 +466,14 @@ section {
 .services .icon-box {
   text-align: center;
   border: 1px solid #cfcfcf;
-  padding: 40px 20px;
+  padding: 30px;
   width:80%;
+  border-radius: 20px;
+  min-height: 200px;
   max-height: 440px;
-  overflow: scroll;
   margin: 0 auto;
   transition: all ease-in-out 0.3s;
-  background: rgb(241, 238, 238);
+  background:white;
 }
 
 .services .icon-box .icon {
