@@ -45,6 +45,7 @@
       });
     }
   });
+  $('#newDate').html(new Date().getFullYear()-2002);
 
 // Counter.js
 $('[data-toggle="counter-up"]').counterUp({
