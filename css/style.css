@@ -12,6 +12,7 @@ html {
   width:92%;
   margin: 0 auto;
 }
+
 /* CARD */
 
 .card-text{
@@ -30,6 +31,9 @@ html {
 a {
   color: #16c79a;
   text-decoration: none;
+}
+.workplaceitem{
+  max-height:60vh; 
 }
 .bx:hover{
   color: #00917c !important;

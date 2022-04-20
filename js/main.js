@@ -14,25 +14,6 @@
     });
     });
 
-// f12 remove
-// document.onkeypress = function (event) {
-//   event = (event || window.event);
-//   if (event.keyCode == 123) {
-//   return false;
-//   }
-//   }
-//   document.onmousedown = function (event) {
-//   event = (event || window.event);
-//   if (event.keyCode == 123) {
-//   return false;
-//   }
-//   }
-//   document.onkeydown = function (event) {
-//   event = (event || window.event);
-//   if (event.keyCode == 123) {
-//   return false;
-//   }
-//   }
 // Removed Right Click
   document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
@@ -45,7 +26,8 @@
       });
     }
   });
-  $('#newDate').html(new Date().getFullYear()-2002);
+
+  $('#newDate').html(new Date().getFullYear()-2005);
 
 // Counter.js
 $('[data-toggle="counter-up"]').counterUp({
@@ -154,10 +136,11 @@ $(window).scroll(function() {
 $(".service-owl").owlCarousel({
   nav:false,
   loop:true,
-  dots:false,
+  dots:true,
   slideTransition: 'linear',
-    autoplayTimeout: 1500,
-    autoplaySpeed: 2700,
+  autoplayTimeout: 1500,
+  autoplaySpeed: 1600,
+    autoplayHoverPause: true,
     autoplay: true,
     responsive: {
       0: {
@@ -175,7 +158,7 @@ $(".service-owl").owlCarousel({
   // Clients carousel
   $(".clients-carousel").owlCarousel({
     margin: 20,
-    nav:false,
+    nav:true,
     slideTransition: 'linear',
     autoplayTimeout: 1500,
     autoplaySpeed: 1600,
@@ -195,6 +178,32 @@ $(".service-owl").owlCarousel({
       }
     }
   });
+
+  // WorkCarousle
+
+$('.work-carousel').owlCarousel({
+  margin: 20,
+  nav:false,
+  slideTransition: 'linear',
+  autoplayTimeout: 3000,
+  autoplaySpeed: 3000,
+  // autoplayHoverPause: true,
+  autoplay: true,
+  dots: true,
+  loop: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    900: {
+      items: 3
+    }
+  }
+})
+
 // Port Owl
 $(".port-owl").owlCarousel({
   nav:false,
@@ -263,3 +272,5 @@ $(".port-owl").owlCarousel({
   });
 
 })(jQuery);
+
+
