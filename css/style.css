@@ -12,7 +12,9 @@ html {
   width:92%;
   margin: 0 auto;
 }
-
+*{
+  cursor: default !important;
+}
 /* CARD */
 
 .card-text{
@@ -46,7 +48,7 @@ a:hover {
   text-decoration: none;
 }
 #brandname{
-font-size: 6.5rem !important;
+font-size: 6.5rem;
 text-shadow: 4px 1px 6px rgba(1, 150, 150, 1);
 }
 
@@ -259,9 +261,9 @@ h6 {
 
 #start h1 {
   margin: 0;
-  font-size: 56px;
+  font-size: 14vmin !important;
   font-weight: 700;
-  line-height: 64px;
+  line-height: 4rem;
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
@@ -1448,16 +1450,11 @@ a{
     margin-top: 50px;
   }
   #brandname{
-    font-size: 3rem !important;
-    line-height: 1.2 !important;
+    font-size: 7vmin !important;
+    /* line-height: 20px !important; */
   }
   .content {
     padding-left: 0px !important;
-  }
-
-  #start h1 {
-    font-size: 28px;
-    line-height: 36px;
   }
 
   #start .icon-box h2 {
