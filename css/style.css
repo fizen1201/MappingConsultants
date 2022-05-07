@@ -12,9 +12,9 @@ html {
   width:92%;
   margin: 0 auto;
 }
-*{
+/* *{
   cursor: default !important;
-}
+} */
 /* CARD */
 
 .card-text{
