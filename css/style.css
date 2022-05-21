@@ -6,7 +6,6 @@ body {
   color: #444444;
   background-color: rgb(255, 255, 255);
 }
-
 html {
   scroll-behavior: smooth !important;
 }
@@ -14,6 +13,11 @@ html {
 .card {
   width: 92%;
   margin: 0 auto;
+}
+
+#galtitle{
+font-size: 6vmin;
+text-align: center;
 }
 
 /* CARD */
