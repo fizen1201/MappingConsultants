@@ -251,7 +251,7 @@ h6 {
 #start {
   width: 100%;
   height: 100vh;
-  background: url("../img/building.jpg") top center;
+  background: url("../img/building.webp") top center;
   background-size: cover;
   position: relative;
 }
@@ -551,7 +551,7 @@ a {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.webp") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -790,7 +790,7 @@ a {
 }
 
 .counts .image {
-  background: url("../img/client.jpg") center center no-repeat;
+  background: url("../img/client.webp") center center no-repeat;
   background-size: cover;
   min-height: 400px;
 }
@@ -800,7 +800,7 @@ a {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background: url("../img/testimonials-bg.webp") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1372,11 +1372,12 @@ a {
 /* For Smaller screens(xs) */
 @media screen and (max-width: 320px) {
   #start .icon-box h2 {
-    font-size: 1rem !important;
+    font-size: 5vmin !important;
+    text-align: center;
   }
   #start h1{
     font-size: 16vmin !important;
-    line-height: 8vh !important;
+    line-height: 5vh !important;
   }
 
   p {
@@ -1385,28 +1386,8 @@ a {
   }
 
   #logo {
-    font-size: 1.5rem !important;
-  }
-
-  .navbar-toggler {
-    margin: 0 auto !important;
-  }
-
-}
-
-/* For Smaller screens(s) */
-@media screen and (min-width: 320px) and (max-width: 375px) {
-  .navbar-brand {
-    margin: 0 auto !important;
-  }
-
-  #logo {
-    font-size: 1.7rem !important;
-  }
-
-  p {
-    width: 90% !important;
-    margin: 0 auto !important;
+    font-size: 9.5vmin !important;
+    text-align: center !important;
   }
 
   .navbar-toggler {
@@ -1435,11 +1416,12 @@ a {
   }
 }
 
-@media (max-width: 667px) {
+/* @media (max-width: 667px) {
   .counts .image img {
     max-width: 100%;
   }
-}
+} */
+
 
 /* Medium Sized Device (M) */
 
@@ -1459,19 +1441,14 @@ a {
   }
 }
 
-
-@media screen and (max-width: 768px) and (min-width: 320px) {
-  #start h1{
-    font-size: 15vmin !important;
-    line-height: 12vh !important;
-  }
-}
-
 @media screen and (max-width: 768px) and (min-width: 497px) {
   #logo {
     font-size: 2.5rem !important;
   }
-
+  #start h1{
+    font-size: 12vmin !important;
+    line-height: 8vh !important;
+  }
   p {
     width: 90% !important;
     margin: 0 auto !important;
@@ -1482,7 +1459,114 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+/* Tablets */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  #start .icon-box h2 {
+    font-size: 1.9rem !important;
+  }
+  #start h1{
+    font-size: 12vmin !important;
+    line-height: 10vh !important;
+  }
+
+  .navbar-expand-lg {
+    overflow-y: hidden !important;
+  }
+
+  .nav-link {
+    font-size: 1.1rem !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  #brandname {
+    font-size: 7vmin !important;
+  }
+
+  .headbox {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1001px) {
+  .counts .image {
+    text-align: center;
+  }
+
+  .counts .image img {
+    max-width: 80%;
+  }
+}
+
+/* Tablets and Phablets */
+@media screen and (min-width: 1001px) and (max-width: 1225px) {
+  #start {
+    background-attachment: fixed;
+  }
+  #logo {
+    font-size: 5vmin !important;
+  }
+  #start h1{
+    font-size: 14vmin !important;
+    line-height: 12vh !important;
+  }
+  .navbar-expand-lg {
+    overflow-y: hidden !important;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 1.2rem !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (min-width: 1218px)  {
+  #logo {
+    font-size: 4.5vmin !important;
+  }
+  #start h1{
+    font-size: 13vmin !important;
+    line-height: 10vh !important;
+  }
+}
+
+
+
+
+/* For Smaller screens(s) */
+/* @media screen and (min-width: 320px) and (max-width: 375px) {
+  .navbar-brand {
+    margin: 0 auto !important;
+  }
+
+  #logo {
+    font-size: 1.7rem !important;
+  }
+
+  p {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .navbar-toggler {
+    margin: 0 auto !important;
+  }
+} */
+
+
+
+
+/* @media screen and (max-width: 768px) and (min-width: 320px) {
+  #start h1{
+    font-size: 15vmin !important;
+    line-height: 6.6vh !important;
+  }
+} */
+
+
+
+/* @media (max-width: 768px) {
   #start {
     height: auto;
   }
@@ -1516,55 +1600,7 @@ a {
     font-size: 1.1rem;
     line-height: 36px;
   }
-}
+} */
 
-/* Tablets */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
-  #start .icon-box h2 {
-    font-size: 1.9rem !important;
-  }
 
-  .navbar-expand-lg {
-    overflow-y: hidden !important;
-  }
 
-  .nav-link {
-    font-size: 1.1rem !important;
-    padding: 0 !important;
-    margin: 0 auto !important;
-  }
-
-  #brandname {
-    font-size: 7vmin !important;
-  }
-
-  .headbox {
-    margin-bottom: 50px;
-  }
-
-  @media (max-width: 991px) {
-    .counts .image {
-      text-align: center;
-    }
-
-    .counts .image img {
-      max-width: 80%;
-    }
-  }
-
-  /* Tablets and Phablets */
-  @media and (min-width: 1024px) and (max-width: 1225px) {
-    #start {
-      background-attachment: fixed;
-    }
-
-    .navbar-expand-lg {
-      overflow-y: hidden !important;
-    }
-
-    .navbar-expand-lg .navbar-nav .nav-link {
-      font-size: 1.2rem !important;
-      padding: 0 !important;
-      margin: 0 auto !important;
-    }
-  }
