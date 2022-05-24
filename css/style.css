@@ -4,7 +4,6 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-color: rgb(255, 255, 255);
 }
 html {
   scroll-behavior: smooth !important;
@@ -227,8 +226,8 @@ h6 {
 }
 
 .nav-item {
-  font-size: 4.5vmin;
-  padding: 2px 10px;
+  font-size: 3.5vmin;
+  padding: 5px;
 }
 
 #header.header-scrolled,
@@ -602,7 +601,9 @@ a {
   border-color: #16c79a !important;
   margin-bottom: 10px;
 }
-
+p{
+  margin-bottom: 0 !important;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -801,7 +802,7 @@ a {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-  padding: 80px 0;
+  padding: 25vh 0;
   background: url("../img/testimonials-bg.webp") no-repeat;
   background-position: center center;
   background-size: cover;
@@ -907,7 +908,7 @@ a {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  /* background: #fff; */
   padding: 60px 0;
 }
 
@@ -1120,6 +1121,10 @@ a {
   box-shadow: none;
   transition-delay: 0.1s;
   transition-duration: 1s;
+}
+.testimonial_title{
+font-size: 3.5vmin !important;
+text-shadow: 1px 1px grey;
 }
 
 /*--------------------------------------------------------------
