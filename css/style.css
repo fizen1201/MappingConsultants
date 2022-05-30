@@ -4,7 +4,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(248, 246, 246);
 }
 html {
   scroll-behavior: smooth !important;
@@ -33,13 +33,12 @@ text-align: center;
   min-height: 250px;
   max-height: 270px;
   overflow: scroll;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .card-title {
   font-family: 'Fraunces', serif;
   text-align: center;
-  font-weight: 800;
   font-size: 1.5rem;
   letter-spacing: 1px;
 }
@@ -136,14 +135,9 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background: black;
-  color: #16c79a;
+  background: rgb(49, 48, 48);
+  color: #18ad88;
   transition: all 0.4s;
-}
-
-.back-to-top i:hover {
-  background: aqua;
-  color: black;
 }
 
 .back-to-home {
@@ -232,7 +226,6 @@ h6 {
 }
 
 .nav-item {
-  font-size: 3.5vmin;
   padding: 5px;
 }
 
@@ -1118,17 +1111,20 @@ p{
 }
 
 #map {
-  box-shadow: 2px 3px 6px #16c79a;
   border-radius: 18px;
+  width: 100%; 
+   box-shadow: 2px 2px 2px #16c79a;
+  height: 270px;
+  border: 1px solid #16c79a;
 }
 
 #map:hover {
   box-shadow: none;
-  transition-delay: 0.1s;
+  transition-delay: 0s;
   transition-duration: 1s;
 }
 .testimonial_title{
-font-size: 3.5vmin !important;
+font-size: 3.5vmin;
 text-shadow: 1px 1px grey;
 }
 
@@ -1407,52 +1403,6 @@ text-shadow: 1px 1px grey;
   }
 }
 
-/* Semi-Medium Device(sM) */
-/* @media screen and (min-width: 375px) and (max-width: 424px) {
-  .navbar-brand {
-    font-size: 1.4rem !important;
-    margin: 0 auto !important;
-  }
-
-  #logo {
-    font-size: 2.2rem !important;
-  }
-
-  p {
-    width: 90% !important;
-    margin: 0 auto !important;
-  }
-
-  .navbar-toggler {
-    margin: 0 auto !important;
-  }
-} */
-
-/* @media (max-width: 667px) {
-  .counts .image img {
-    max-width: 100%;
-  }
-} */
-
-
-/* Medium Sized Device (M) */
-
-/* @media screen and (max-width: 497px) and (min-width: 425px) {
-  .navbar-brand {
-    font-size: 1rem !important;
-    margin: 0 auto !important;
-  }
-
-  p {
-    width: 90% !important;
-    margin: 0 auto !important;
-  }
-
-  .navbar-toggler {
-    margin: 0 auto !important;
-  }
-} */
-
 @media screen and (max-width: 768px) and (min-width: 321px) {
   #logo {
     font-size: 7vmin !important;
@@ -1477,8 +1427,9 @@ text-shadow: 1px 1px grey;
 /* Tablets */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   #start .icon-box h2 {
-    font-size: 1vmin !important;
+    font-size: 3.5vmin !important;
   }
+  
   #start h1{
     font-size: 12vmin !important;
     line-height: 10vh !important;
@@ -1545,77 +1496,3 @@ text-shadow: 1px 1px grey;
     line-height: 10vh !important;
   }
 }
-
-
-
-
-/* For Smaller screens(s) */
-/* @media screen and (min-width: 320px) and (max-width: 375px) {
-  .navbar-brand {
-    margin: 0 auto !important;
-  }
-
-  #logo {
-    font-size: 1.7rem !important;
-  }
-
-  p {
-    width: 90% !important;
-    margin: 0 auto !important;
-  }
-
-  .navbar-toggler {
-    margin: 0 auto !important;
-  }
-} */
-
-
-
-
-/* @media screen and (max-width: 768px) and (min-width: 320px) {
-  #start h1{
-    font-size: 15vmin !important;
-    line-height: 6.6vh !important;
-  }
-} */
-
-
-
-/* @media (max-width: 768px) {
-  #start {
-    height: auto;
-  }
-
-  .iconheader {
-    font-size: 1.3rem !important;
-  }
-
-  section {
-    padding: 20px 0 !important;
-    overflow: hidden;
-  }
-
-  #portfolio {
-    margin-top: 50px;
-  }
-
-  .Initial {
-    color: teal !important;
-    font-size: 3.5rem !important;
-  }
-
-  .updraft {
-    margin-top: 50px;
-  }
-  .content {
-    padding-left: 0px !important;
-  }
-
-  #start .icon-box h2 {
-    font-size: 1.1rem;
-    line-height: 36px;
-  }
-} */
-
-
-
