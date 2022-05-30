@@ -141,7 +141,7 @@ $(".service-owl").owlCarousel({
   autoplayTimeout: 1500,
   autoplaySpeed: 1600,
     autoplayHoverPause: true,
-    autoplay: true,
+    autoplay: false,
     responsive: {
       0: {
         items: 1
@@ -158,7 +158,6 @@ $(".service-owl").owlCarousel({
   // Clients carousel
   $(".clients-carousel").owlCarousel({
     margin: 20,
-    nav:true,
     slideTransition: 'linear',
     autoplayTimeout: 1500,
     autoplaySpeed: 1600,

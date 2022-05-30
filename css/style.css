@@ -4,16 +4,22 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-color: rgb(246, 246, 246);
 }
 html {
   scroll-behavior: smooth !important;
   overflow-x: none !important;
   overflow-y: none !important;
 }
-
+.clientbox{
+  border-radius: 20px;
+}
 .card {
   width: 92%;
-  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid rgb(195, 195, 195);
+  padding: 5px;
+  text-align: center;
 }
 
 #galtitle{
@@ -993,7 +999,6 @@ p{
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 
 .contact .info i {
