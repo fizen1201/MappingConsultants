@@ -178,30 +178,6 @@ $(".service-owl").owlCarousel({
     }
   });
 
-  // WorkCarousle
-
-// $('.work-carousel').owlCarousel({
-//   margin: 20,
-//   nav:false,
-//   slideTransition: 'linear',
-//   autoplayTimeout: 3000,
-//   autoplaySpeed: 3000,
-//   // autoplayHoverPause: true,
-//   autoplay: true,
-//   dots: true,
-//   loop: true,
-//   responsive: {
-//     0: {
-//       items: 1
-//     },
-//     768: {
-//       items: 2
-//     },
-//     900: {
-//       items: 3
-//     }
-//   }
-// })
 
 // Port Owl
 $(".port-owl").owlCarousel({

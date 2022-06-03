@@ -16,6 +16,7 @@ html {
 }
 .card {
   width: 92%;
+  scroll: hidden;
   border-radius: 10px;
   border: 2px solid rgb(195, 195, 195);
   padding: 5px;
@@ -33,7 +34,7 @@ text-align: center;
   min-height: 250px;
   max-height: 270px;
   overflow: scroll;
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 .card-title {
@@ -292,7 +293,7 @@ h6 {
 }
 
 #start .icon-box {
-  padding: 20px;
+  padding: 10px;
   transition: ease-in-out 0.3s;
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 3%;
@@ -311,7 +312,7 @@ h6 {
   margin: 10px 0 0 0;
   padding: 0;
   line-height: 1;
-  font-size: 1.6rem;
+  font-size: 20px;
   line-height: 36px;
 }
 
@@ -491,11 +492,14 @@ section {
   padding: 30px;
   width: 80%;
   border-radius: 20px;
-  min-height: 200px;
+  min-height: 270px;
   max-height: 440px;
   margin: 0 auto;
   transition: all ease-in-out 0.3s;
   background: white;
+}
+.portfolio-wrap{
+  border-radius: 20px;
 }
 
 .services .icon-box .icon {
@@ -520,7 +524,7 @@ section {
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 21px;
 }
 
 .services .icon-box h4 a {
@@ -544,7 +548,7 @@ a {
 
 .services .icon-box:hover {
   border: 3px solid #16c79a;
-  box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.75);
+  /* box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.75); */
 }
 
 /*--------------------------------------------------------------
@@ -842,7 +846,6 @@ p{
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
   color: #ddd;
   margin: 0 0 15px 0;
 }
@@ -1124,7 +1127,7 @@ p{
   transition-duration: 1s;
 }
 .testimonial_title{
-font-size: 3.5vmin;
+font-size: 5.5vmin;
 text-shadow: 1px 1px grey;
 }
 
@@ -1411,9 +1414,7 @@ text-shadow: 1px 1px grey;
     font-size: 12vmin !important;
     line-height: 10vh !important;
   }
-  #start .icon-box h2 {
-    font-size: 5vmin !important;
-  }
+
   p {
     width: 90% !important;
     margin: 0 auto !important;
@@ -1426,9 +1427,6 @@ text-shadow: 1px 1px grey;
 
 /* Tablets */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-  #start .icon-box h2 {
-    font-size: 3.5vmin !important;
-  }
   
   #start h1{
     font-size: 12vmin !important;
@@ -1492,7 +1490,7 @@ text-shadow: 1px 1px grey;
     font-size: 4.5vmin !important;
   }
   #start h1{
-    font-size: 13vmin !important;
-    line-height: 10vh !important;
+    font-size: 18vmin !important;
+    line-height: 15vh !important;
   }
 }
